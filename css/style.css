@@ -508,7 +508,7 @@ font-family: 'Open Sans', sans-serif;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .slider1__text ul {
     list-style: none;
     display: -webkit-box;
