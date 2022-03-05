@@ -19,7 +19,7 @@ a {
 
 html,
 body {
-  height: 100%;
+  width: 100%;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #fff;
   font-size: 14px;
@@ -32,7 +32,7 @@ font-family: 'Open Sans', sans-serif;
 */
 /*----------------------*/
 .wrapper {
-  min-width: 100vw;
+  min-width: 100%;
 }
 
 .header-wrapper {
@@ -262,7 +262,8 @@ font-family: 'Open Sans', sans-serif;
 
 /*-------------------------*/
 .swiper {
-  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -394,7 +395,6 @@ font-family: 'Open Sans', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -23px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -514,7 +514,6 @@ font-family: 'Open Sans', sans-serif;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 -23px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: center;
