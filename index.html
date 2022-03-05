@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Grill hause</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;600;700;800&display=swap">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header-wrapper">
+            <div class="logo">
+               <img src="img/header/logo.png" alt="">
+            </div>
+            <div class="menu">
+               <span onclick="openNav()" class="menu-icon">
+                  <div class="container " onclick="change(this)">
+                     <div class="bar1"></div>
+                     <div class="bar2"></div>
+                     <div class="bar3"></div>
+                  </div>
+               </span>
+               <ul id="mySidenav" class="sidenav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Menu</a></li>
+                  <li class="active"><a href="#">Specials</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Method</a></li>
+               </ul>
+            </div>
+         </div>
+      </header>
+      <div class="first-slider">
+         <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+               <!-- Slides -->
+               <div class="swiper-slide slider1-slide1">
+                  <div class="slider1__text-block">
+                     <h2 class="slider1_text-block__title">OPENING PARTY</h2>
+                     <div class="slider1__text-block__info">
+                        06/20/2020 - 7 P.M.
+                     </div>
+                  </div>
+                  <div class="slider1__text">
+                     <ul>
+                        <li>FOOD</li>
+                        <li>MUSIC</li>
+                        <li>FRIENDS</li>
+                        <li>FUN</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="swiper-slide slider1-slide2">
+                  <div class="slider1__text-block">
+                     <h2 class="slider1_text-block__title">OPENING PARTY</h2>
+                     <div class="slider1__text-block__info">
+                        06/20/2020 - 7 P.M.
+                     </div>
+                  </div>
+                  <div class="slider1__text">
+                     <ul>
+                        <li>FOOD</li>
+                        <li>MUSIC</li>
+                        <li>FRIENDS</li>
+                        <li>FUN</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="swiper-slide slider1-slide3">
+                  <div class="slider1__text-block">
+                     <h2 class="slider1_text-block__title">OPENING PARTY</h2>
+                     <div class="slider1__text-block__info">
+                        06/20/2020 - 7 P.M.
+                     </div>
+                  </div>
+                  <div class="slider1__text">
+                     <ul>
+                        <li>FOOD</li>
+                        <li>MUSIC</li>
+                        <li>FRIENDS</li>
+                        <li>FUN</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="slider__conrtollers">
+               <div class="slider_controllers__wrapper">
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+   </div>
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
