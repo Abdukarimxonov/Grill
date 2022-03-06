@@ -6,6 +6,7 @@
    border: 0;
    -webkit-box-sizing: border-box;
    box-sizing: border-box;
+   list-style: none;
 }
 :root {
    --color1: #e1b838;
@@ -18,15 +19,9 @@ html,
 body {
    width: 100%;
    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-   color: #fff;
    font-size: 14px;
-   /*  background-color: #090a08;*/
 }
 
-/*
-font-family: 'Fjalla One', sans-serif;
-font-family: 'Open Sans', sans-serif;
-*/
 /*----------------------*/
 .wrapper {
    min-width: 100%;
@@ -46,7 +41,7 @@ font-family: 'Open Sans', sans-serif;
 .logo {
    flex: 0 1 237px;
 }
-.menu {
+.menu-list {
    border: 3px solid var(--color1);
    flex: 1 1 auto;
    margin-left: 70px;
@@ -67,11 +62,12 @@ font-family: 'Open Sans', sans-serif;
    padding: 20px 0;
    flex: 1 1 auto;
    text-align: center;
+   transition: background-color 1.5s;
 }
-.sidenav li.active a {
+.sidenav li:hover a {
    color: var(--color2);
 }
-.sidenav li.active {
+.sidenav li:hover {
    font-weight: 700;
    background-color: var(--color1);
 }
@@ -135,7 +131,7 @@ font-family: 'Open Sans', sans-serif;
    .header-wrapper {
       padding: 30px 50px 0 50px;
    }
-   .menu {
+   .menu-list {
       margin-left: 35px;
    }
 }
@@ -144,7 +140,7 @@ font-family: 'Open Sans', sans-serif;
       padding: 30px 50px 0 50px;
       flex-direction: column;
    }
-   .menu {
+   .menu-list {
       width: 100%;
       margin: 20px 0px 0px;
    }
@@ -177,7 +173,7 @@ font-family: 'Open Sans', sans-serif;
       transform: translate(0, 0);
    }
 
-   .menu {
+   .menu-list {
       border: none;
    }
 
@@ -194,16 +190,14 @@ font-family: 'Open Sans', sans-serif;
       flex: 0 1 auto;
       text-align: center;
    }
-   .sidenav li.active a {
-      color: var(--color2);
-   }
-   .sidenav li.active {
+   .sidenav li:hover {
       font-weight: 700;
       background-color: transparent;
    }
-   .sidenav li.active a {
+   .sidenav li:hover a {
       background-color: var(--color1);
       padding: 10px 20px;
+      color: var(--color2);
    }
 }
 /*-------------------------*/
@@ -211,8 +205,6 @@ font-family: 'Open Sans', sans-serif;
    width: 100%;
    overflow: hidden;
    height: fit-content;
-   background-color: #090a08;
-   background-image: linear-gradient(180deg, #090a08, #191a17);
    position: relative;
 }
 .swiper-slide {
@@ -220,7 +212,8 @@ font-family: 'Open Sans', sans-serif;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-image: url("../img/slider/bg/background.png");
+   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)),
+      url("../img/slider/bg/background.png");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -426,5 +419,121 @@ font-family: 'Open Sans', sans-serif;
    .slider1__text-block__info {
       padding: 15px 0px;
       border: 5px solid var(--color1);
+   }
+}
+/*------------------------*/
+.menu {
+   background-image: url("../img/slider/bg/background.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.menu__title {
+   font-family: "Fjalla One";
+   font-size: 62.5px;
+   line-height: 1.2;
+   font-weight: 400;
+   letter-spacing: 0.025em;
+   text-shadow: 3px 17px 31px rgba(0, 0, 0, 0.77);
+   color: #ffffff;
+   text-align: center;
+}
+.menu__row {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   padding: 0 40px 50px;
+   flex-wrap: wrap;
+}
+.menu__column {
+   display: flex;
+   flex-direction: column;
+   flex: 0 1 33.333%;
+   padding: 0 50px;
+}
+.menu__column-img {
+   img {
+      width: 100%;
+      height: 100%;
+   }
+}
+.menu__column-card {
+}
+.column-card {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 50px;
+}
+.column-card__title {
+   font-family: "Open Sans";
+   font-size: 30.2px;
+   font-weight: 800;
+   color: #262626;
+   background-color: var(--color1);
+   padding: 15px;
+   flex: 0 1 100%;
+}
+.column-card__info {
+   display: flex;
+   justify-content: space-between;
+   font-family: "Open Sans";
+   font-size: 22.7px;
+   line-height: 1.2;
+   font-weight: 600;
+   color: #ffffff;
+   padding: 15px;
+   line-height: 1.8;
+   border: 3px solid var(--color1);
+   margin-top: -0.5px;
+}
+.column-card__dishes {
+}
+.column-card__prices {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+@media (max-width: 1300px) {
+   .menu__column {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 33.33%;
+      padding: 0 20px;
+   }
+   .menu__row {
+      padding: 0 20px 40px;
+   }
+}
+@media (max-width: 1100px) {
+   .menu__column {
+      display: flex;
+      flex-direction: column;
+      flex: 0 1 33.33%;
+      padding: 0 10px;
+   }
+   .column-card__info {
+      font-size: 19px;
+   }
+}
+@media (max-width: 900px) {
+   .menu__column {
+      flex: 0 1 44%;
+   }
+}
+@media (max-width: 700px) {
+   .menu__column {
+      flex: 0 1 60%;
+   }
+   .column-card__info {
+      padding: 10px;
+   }
+}
+@media (max-width: 550px) {
+   .menu__column {
+      flex: 1 1 60%;
+   }
+   .column-card__info {
+      padding: 10px;
    }
 }
