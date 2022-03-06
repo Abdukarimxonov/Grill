@@ -5,14 +5,16 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
    <title>Grill hause</title>
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;600;700;800&display=swap">
-   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-   <link rel="stylesheet" href="css/style.css">
+   <noscript class="loadLater">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet"
+         href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Open+Sans:wght@300;400;600;700;800&display=swap">
+      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="css/style.css">
+   </noscript>
+
 </head>
 
 <body>
@@ -230,6 +232,17 @@
          </div>
       </div>
    </div>
+
+   <script type="application/javascript">
+      document.addEventListener("DOMContentLoaded", function (event) {
+         var loadLater = document.querySelector('.loadLater');
+         var head = document.querySelector('head');
+         if (loadLater && head) {
+            head.insertAdjacentHTML('beforeend', loadLater.innerHTML);
+         }
+      });
+   </script>
+
    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
    <script src="js/script.js"></script>
 </body>
