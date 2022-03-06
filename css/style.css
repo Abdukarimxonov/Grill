@@ -280,10 +280,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../img/slider/bg/background.png");
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../img/slider/bg/background.png");
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../img/slider/bg/background.png");
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../img/slider/bg/background.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.6))), url("../img/slider/bg/background.webp");
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../img/slider/bg/background.webp");
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../img/slider/bg/background.webp");
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("../img/slider/bg/background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -324,27 +324,27 @@ body {
 }
 
 .slider1-slide1::after {
-  background-image: url("../img/slider/1.png");
+  background-image: url("../img/menu/1.webp");
 }
 
 .slider1-slide1::before {
-  background-image: url("../img/slider/2.png");
+  background-image: url("../img/menu/2.webp");
 }
 
 .slider1-slide2::after {
-  background-image: url("../img/slider/2.png");
+  background-image: url("../img/menu/2.webp");
 }
 
 .slider1-slide2::before {
-  background-image: url("../img/slider/3.png");
+  background-image: url("../img/menu/3.webp");
 }
 
 .slider1-slide3::after {
-  background-image: url("../img/slider/3.png");
+  background-image: url("../img/menu/3.webp");
 }
 
 .slider1-slide3::before {
-  background-image: url("../img/slider/1.png");
+  background-image: url("../img/menu/1.webp");
 }
 
 .slider1__text-block {
@@ -552,7 +552,7 @@ body {
 
 /*------------------------*/
 .menu {
-  background-image: url("../img/slider/bg/background.png");
+  background-image: url("../img/slider/bg/background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
