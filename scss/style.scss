@@ -458,8 +458,6 @@ body {
       height: 100%;
    }
 }
-.menu__column-card {
-}
 .column-card {
    display: flex;
    flex-direction: column;
@@ -487,8 +485,7 @@ body {
    border: 3px solid var(--color1);
    margin-top: -0.5px;
 }
-.column-card__dishes {
-}
+
 .column-card__prices {
    display: flex;
    flex-direction: column;
