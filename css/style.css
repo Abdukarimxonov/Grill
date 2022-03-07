@@ -900,3 +900,109 @@ body.lock {
 }
 
 /*--------------*/
+.method {
+  background-image: url("../img/slider/bg/background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-right: 5.555%;
+}
+
+.method-card__title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  font-size: 58.4px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+}
+
+.method__img {
+  padding-top: 95px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+}
+
+.method__img img {
+  width: 100%;
+}
+
+.method-card {
+  padding-top: 105px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 590px;
+          flex: 0 0 590px;
+}
+
+.method-card__info {
+  font-size: 37.5px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+@media (max-width: 1200px) {
+  .method__img {
+    padding-top: 95px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 38%;
+            flex: 0 1 38%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1000px) {
+  .method {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .method__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    padding-top: 10px;
+  }
+  .method-card {
+    padding: 10px 40px 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 600px;
+            flex: 0 0 600px;
+  }
+  .method-card__info {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .method__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 80%;
+            flex: 0 1 80%;
+  }
+  .method-card {
+    padding: 10px 20px 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .method-card__title {
+    font-size: 38.4px;
+  }
+  .method-card__info {
+    font-size: 20px;
+  }
+}
