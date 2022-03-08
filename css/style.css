@@ -252,9 +252,9 @@ body.lock {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-transition: all 1.1s;
-    -o-transition: all 1.1s;
-    transition: all 1.1s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .sidenav.active {
     -webkit-transform: translate(0, 0);

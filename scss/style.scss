@@ -192,7 +192,7 @@ body.lock {
       z-index: 3;
       background-color: var(--color2);
       flex-direction: column;
-      transition: all 1.1s;
+      transition: all 0.5s;
    }
    .sidenav.active {
       transform: translate(0, 0);
