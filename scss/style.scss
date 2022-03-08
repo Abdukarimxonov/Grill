@@ -850,6 +850,7 @@ body.lock {
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   overflow: hidden;
 }
 .live__row {
    display: flex;
@@ -895,6 +896,7 @@ body.lock {
 }
 .live__images {
    width: 100%;
+   margin-bottom: -3.8vw;
 }
 .live__img img {
    width: 100%;
