@@ -1012,6 +1012,9 @@ body.lock {
    font-weight: 400;
    color: #ffffff;
 }
+.menu__link a:hover {
+   color: var(--color1);
+}
 .footer_bottom {
    display: flex;
    justify-content: center;
@@ -1022,14 +1025,23 @@ body.lock {
    text-decoration: none;
    color: var(--color1);
 }
+.footer_bottom a:hover {
+   color: #fff;
+}
 .footer__adress a {
-   padding-left: 5.5vw;
-   padding-right: 22.2vw;
+   margin-left: 5.5vw;
+   margin-right: 22.2vw;
    font-family: "Open Sans";
    font-size: 2.8vw;
    line-height: 1.2;
    font-weight: 400;
    color: #ffffff;
+}
+.footer__adress a:hover {
+   color: var(--color1);
+}
+.footer_contacts a:hover {
+   color: var(--color1);
 }
 .footer_contacts {
    font-family: "Open Sans";
@@ -1050,6 +1062,10 @@ li.demo-icon {
    justify-content: center;
    margin-right: 1.7361vw;
    border-radius: 0.347vw;
+}
+li.demo-icon:hover {
+   color: var(--color1);
+   background-color: var(--color2);
 }
 li.demo-icon a {
    color: var(--color2);
@@ -1146,7 +1162,7 @@ li.demo-icon a {
       padding-left: 0;
       padding-right: 0;
       font-family: "Open Sans";
-      font-size: 7.6vw;
+      font-size: 5.6vw;
       line-height: 1.2;
       font-weight: 400;
       color: #ffffff;
