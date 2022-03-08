@@ -1411,10 +1411,6 @@ body.lock {
   color: var(--color1);
 }
 
-.footer_bottom a:hover {
-  color: #fff;
-}
-
 .footer__adress a {
   margin-left: 5.5vw;
   margin-right: 22.2vw;
