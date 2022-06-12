@@ -5,7 +5,7 @@ function openNav() {
 
 
 function change(x) {
-   x.classList.add("change");
+   x.classList.toggle("change");
 };
 /*------------*/
 const swiper = new Swiper('.swiper', {
